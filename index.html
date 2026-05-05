@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+      <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -13,13 +13,19 @@
   <h1 class="text-4xl md:text-6xl font-bold">
     1 Minute Accounting.<br>Zero Effort.
   </h1>
+
   <p class="mt-6 text-gray-300 text-lg">
     बस invoice डालो, Tally अपने आप बन जाएगा
   </p>
 
+  <!-- POWER LINE -->
+  <p class="mt-4 text-green-400 font-semibold">
+    Replace Data Entry Operator at Just ₹2000/month
+  </p>
+
   <div class="mt-8 space-x-4">
     <a href="#demo" class="bg-green-500 px-6 py-3 rounded-lg text-black font-semibold">Watch Demo</a>
-    <a href="#" class="bg-white text-black px-6 py-3 rounded-lg font-semibold">Free Trial</a>
+    <a href="#contact" class="bg-white text-black px-6 py-3 rounded-lg font-semibold">Free Trial</a>
   </div>
 </section>
 
@@ -27,9 +33,11 @@
 <section id="demo" class="py-16 text-center bg-gray-800">
   <h2 class="text-3xl font-bold mb-6">Live Demo</h2>
 
-  <video controls class="mx-auto w-[90%] md:w-[600px] rounded-xl">
-    <source src="demo.mp4" type="video/mp4">
-  </video>
+  <!-- YouTube Embed (replace link) -->
+  <iframe width="90%" height="315"
+    src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+    class="mx-auto rounded-xl">
+  </iframe>
 </section>
 
 <!-- FEATURES -->
@@ -61,7 +69,7 @@
       <tr class="border-b border-gray-600">
         <th>Feature</th>
         <th>LekhaFlow</th>
-        <th>Vyapar</th>
+        <th>Others</th>
       </tr>
 
       <tr class="border-b border-gray-700">
@@ -87,26 +95,57 @@
 
 <!-- PRICING -->
 <section class="py-16 text-center">
-  <h2 class="text-3xl font-bold mb-8">Pricing</h2>
+  <h2 class="text-3xl font-bold mb-4">Pricing</h2>
+  <p class="text-gray-400 mb-10">Choose your plan based on your workflow</p>
 
-  <div class="grid md:grid-cols-3 gap-6 px-6">
+  <div class="overflow-x-auto px-4">
+    <table class="w-full text-center border border-gray-700 rounded-lg overflow-hidden">
+      
+      <tr class="bg-gray-800">
+        <th class="p-4">Invoices / Month</th>
+        <th class="p-4">LekhaFlow Lite</th>
+        <th class="p-4 bg-green-500 text-black">LekhaFlow PRO 🚀</th>
+      </tr>
+
+      <tr class="border-t border-gray-700">
+        <td class="p-4">200</td>
+        <td class="p-4">₹1000</td>
+        <td class="p-4 font-bold">₹2000</td>
+      </tr>
+
+      <tr class="border-t border-gray-700">
+        <td class="p-4">500</td>
+        <td class="p-4">₹2000</td>
+        <td class="p-4 font-bold">₹5000</td>
+      </tr>
+
+      <tr class="border-t border-gray-700">
+        <td class="p-4">1000</td>
+        <td class="p-4">₹3500</td>
+        <td class="p-4 font-bold">₹8000</td>
+      </tr>
+
+    </table>
+  </div>
+
+  <!-- Feature Comparison -->
+  <div class="grid md:grid-cols-2 gap-6 mt-12 px-6">
 
     <div class="bg-gray-800 p-6 rounded-xl">
-      <h3 class="text-xl font-bold">Starter</h3>
-      <p class="mt-4 text-2xl">₹999</p>
-      <p class="text-gray-400">500 invoices</p>
+      <h3 class="text-xl font-bold mb-2">LekhaFlow Lite</h3>
+      <p class="text-gray-400">✔ True Copy Excel</p>
+      <p class="text-gray-400">✔ Invoice Summary Excel</p>
+      <p class="text-gray-400">✔ Record keeping</p>
+      <p class="text-gray-400">✔ Fast processing</p>
     </div>
 
-    <div class="bg-green-500 text-black p-6 rounded-xl scale-105">
-      <h3 class="text-xl font-bold">Pro</h3>
-      <p class="mt-4 text-2xl">₹2499</p>
-      <p>2000 invoices</p>
-    </div>
-
-    <div class="bg-gray-800 p-6 rounded-xl">
-      <h3 class="text-xl font-bold">Ultra</h3>
-      <p class="mt-4 text-2xl">₹4999</p>
-      <p class="text-gray-400">5000 invoices</p>
+    <div class="bg-green-500 text-black p-6 rounded-xl">
+      <h3 class="text-xl font-bold mb-2">LekhaFlow PRO</h3>
+      <p>🔥 Direct Tally Automation</p>
+      <p>✔ Ledger auto creation</p>
+      <p>✔ Stock + GST auto mapping</p>
+      <p>✔ XML import ready</p>
+      <p>✔ Zero manual work</p>
     </div>
 
   </div>
@@ -117,15 +156,13 @@
   <h2 class="text-3xl font-bold">Start Saving Time Today</h2>
   <p class="mt-4 text-gray-400">7 दिन free trial</p>
 
-  <a href="#" class="mt-6 inline-block bg-green-500 px-8 py-3 rounded-lg text-black font-bold">
+  <a href="#contact" class="mt-6 inline-block bg-green-500 px-8 py-3 rounded-lg text-black font-bold">
     Get Started
   </a>
 </section>
 
-</body>
-</html>
-
-<section class="py-16 text-center">
+<!-- CONTACT FORM -->
+<section id="contact" class="py-16 text-center">
   <h2 class="text-2xl font-bold mb-4">Get Free Demo</h2>
 
   <form action="https://formsubmit.co/nexoriva.systems@gmail.com" method="POST" class="max-w-md mx-auto">
@@ -147,10 +184,12 @@
   </form>
 </section>
 
-<!-- WhatsApp Button -->
+<!-- WHATSAPP BUTTON -->
 <a href="https://wa.me/918770808695?text=Hi%20I%20want%20LekhaFlow%20demo"
    target="_blank"
    class="fixed bottom-5 right-5 bg-green-500 text-black px-4 py-3 rounded-full shadow-lg font-bold">
    WhatsApp
 </a>
 
+</body>
+</html>
