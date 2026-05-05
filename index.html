@@ -1,135 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>LekhaFlow AI</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<style>
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #020617;
-    color: white;
-}
-
-.container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 20px;
-}
-
-.hero {
-    text-align: center;
-    padding: 80px 20px;
-}
-
-.hero h1 {
-    font-size: 42px;
-    color: #facc15;
-}
-
-.hero p {
-    color: #cbd5f5;
-    font-size: 18px;
-}
-
-.btn {
-    padding: 14px 28px;
-    background: #10b981;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    margin: 10px;
-    display: inline-block;
-    font-weight: bold;
-}
-
-.stats {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 40px;
-}
-
-.stats div {
-    text-align: center;
-}
-
-.section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.card {
-    background: #1e293b;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 10px;
-}
-
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.footer {
-    text-align: center;
-    padding: 30px;
-    background: black;
-    color: #94a3b8;
-}
-</style>
+  <meta charset="UTF-8">
+  <title>LekhaFlow</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-gray-900 text-white font-sans">
 
-<div class="hero">
-    <h1>From Invoice to Tally — in seconds</h1>
-    <p>Stop manual data entry. Automate your accounting with AI.</p>
+<!-- HERO -->
+<section class="text-center py-20 px-4">
+  <h1 class="text-4xl md:text-6xl font-bold">
+    1 Minute Accounting.<br>Zero Effort.
+  </h1>
+  <p class="mt-6 text-gray-300 text-lg">
+    बस invoice डालो, Tally अपने आप बन जाएगा
+  </p>
 
-    <a href="#" class="btn">Start Free Trial</a>
-    <a href="#" class="btn" style="background:#2563eb;">See Demo</a>
+  <div class="mt-8 space-x-4">
+    <a href="#demo" class="bg-green-500 px-6 py-3 rounded-lg text-black font-semibold">Watch Demo</a>
+    <a href="#" class="bg-white text-black px-6 py-3 rounded-lg font-semibold">Free Trial</a>
+  </div>
+</section>
 
-    <div class="stats">
-        <div><h2>3400+</h2><p>Invoices</p></div>
-        <div><h2>98.6%</h2><p>Accuracy</p></div>
-        <div><h2>&lt;4s</h2><p>Processing</p></div>
+<!-- DEMO -->
+<section id="demo" class="py-16 text-center bg-gray-800">
+  <h2 class="text-3xl font-bold mb-6">Live Demo</h2>
+
+  <video controls class="mx-auto w-[90%] md:w-[600px] rounded-xl">
+    <source src="demo.mp4" type="video/mp4">
+  </video>
+</section>
+
+<!-- FEATURES -->
+<section class="py-16 px-6 grid md:grid-cols-3 gap-6">
+
+  <div class="bg-gray-800 p-6 rounded-xl">
+    <h3 class="text-xl font-bold">Auto Ledger Creation</h3>
+    <p class="text-gray-400 mt-2">GSTIN, PAN, State auto add</p>
+  </div>
+
+  <div class="bg-gray-800 p-6 rounded-xl">
+    <h3 class="text-xl font-bold">GST Smart Mapping</h3>
+    <p class="text-gray-400 mt-2">IGST → CGST + SGST auto</p>
+  </div>
+
+  <div class="bg-gray-800 p-6 rounded-xl">
+    <h3 class="text-xl font-bold">1 Minute Processing</h3>
+    <p class="text-gray-400 mt-2">Batch + Parallel processing</p>
+  </div>
+
+</section>
+
+<!-- COMPARISON -->
+<section class="py-16 px-6 bg-gray-800">
+  <h2 class="text-3xl text-center font-bold mb-8">Why LekhaFlow?</h2>
+
+  <div class="overflow-x-auto">
+    <table class="w-full text-left">
+      <tr class="border-b border-gray-600">
+        <th>Feature</th>
+        <th>LekhaFlow</th>
+        <th>Vyapar</th>
+      </tr>
+
+      <tr class="border-b border-gray-700">
+        <td>Data Entry</td>
+        <td>❌ Zero</td>
+        <td>Manual verify</td>
+      </tr>
+
+      <tr class="border-b border-gray-700">
+        <td>Speed</td>
+        <td>⚡ 1 Minute</td>
+        <td>Slow</td>
+      </tr>
+
+      <tr>
+        <td>Accuracy</td>
+        <td>99%</td>
+        <td>Lower</td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="py-16 text-center">
+  <h2 class="text-3xl font-bold mb-8">Pricing</h2>
+
+  <div class="grid md:grid-cols-3 gap-6 px-6">
+
+    <div class="bg-gray-800 p-6 rounded-xl">
+      <h3 class="text-xl font-bold">Starter</h3>
+      <p class="mt-4 text-2xl">₹999</p>
+      <p class="text-gray-400">500 invoices</p>
     </div>
-</div>
 
-<div class="section">
-    <h2>Why LekhaFlow?</h2>
-    <div class="grid">
-        <div class="card">📄 PDF & Excel Support</div>
-        <div class="card">💰 GST + HSN Auto</div>
-        <div class="card">🤖 No Manual Entry</div>
-        <div class="card">⚡ Instant XML Export</div>
+    <div class="bg-green-500 text-black p-6 rounded-xl scale-105">
+      <h3 class="text-xl font-bold">Pro</h3>
+      <p class="mt-4 text-2xl">₹2499</p>
+      <p>2000 invoices</p>
     </div>
-</div>
 
-<div class="section">
-    <h2>How It Works</h2>
-    <p>Select folder → AI processes → Export XML → Import to Tally</p>
-</div>
-
-<div class="section">
-    <h2>Pricing</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>Free</h3>
-            <p>50 invoices/month</p>
-        </div>
-        <div class="card">
-            <h3>₹2499/month</h3>
-            <p>Unlimited invoices</p>
-        </div>
+    <div class="bg-gray-800 p-6 rounded-xl">
+      <h3 class="text-xl font-bold">Ultra</h3>
+      <p class="mt-4 text-2xl">₹4999</p>
+      <p class="text-gray-400">5000 invoices</p>
     </div>
-</div>
 
-<div class="footer">
-    Nexoriva Systems © 2026
-</div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="text-center py-16 bg-gray-800">
+  <h2 class="text-3xl font-bold">Start Saving Time Today</h2>
+  <p class="mt-4 text-gray-400">7 दिन free trial</p>
+
+  <a href="#" class="mt-6 inline-block bg-green-500 px-8 py-3 rounded-lg text-black font-bold">
+    Get Started
+  </a>
+</section>
 
 </body>
 </html>
